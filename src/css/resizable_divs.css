@@ -1,0 +1,70 @@
+.resizable-x,
+.resizable-y {
+  display: flex;
+  overflow: hidden;
+}
+
+.resizable-x {
+  height: 100%;
+}
+
+.resizable-y {
+  height: 100%;
+  flex-direction: column;
+}
+
+.resizer-x,
+.resizer-y {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  padding: 4px;
+}
+
+.resizer-x {
+  z-index: 2;
+  cursor: col-resize;
+}
+.resizer-x::before,
+.resizer-x::after {
+  content: '';
+  width: 1px;
+  height: 16px;
+  margin: 2px;
+  background: lightgray;
+}
+
+.resizer-y {
+  z-index: 1;
+  cursor: row-resize;
+  flex-direction: column;
+}
+.resizer-y::before,
+.resizer-y::after {
+  content: '';
+  width: 16px;
+  height: 1px;
+  margin: 2px;
+  background: lightgray;
+}
+
+.img-container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.img-container iframe {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}

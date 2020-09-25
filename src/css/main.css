@@ -1,0 +1,86 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.codemirror-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.display-window {
+  height: 100%;
+  width: 100%;
+}
+
+.codebox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  padding-left: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  background-color: #253135;
+  color: #ddd;
+}
+
+.empty-section {
+  height: 100%;
+  width: 100%;
+  background-color: #334046;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download {
+  outline: none;
+  border: 0;
+  margin: 0 10px;
+  background: transparent;
+  color: #bbc;
+  font-size: 1rem;
+  font-weight: 100;
+  border-radius: 50%;
+  padding: 3px 8px;
+  transform: translateY(0);
+  transition: all 0.4s;
+}
+
+.download:hover {
+  background: #545868;
+}
+
+.download:active {
+  transform: translateY(2px);
+}
