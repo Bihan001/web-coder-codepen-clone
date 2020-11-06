@@ -1,7 +1,7 @@
 {
   "name": "web-coder",
   "version": "0.1.0",
-  "homepage": "http://Bihan001.github.io/web-coder",
+  "homepage": "https://Bihan001.github.io/web-coder-codepen-clone",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

@@ -96,8 +96,14 @@ const CodeArea = () => {
             style={barStyle}
             onStatusChanged={() => {
               draggingNow = !draggingNow;
-              if (draggingNow) document.querySelector('iframe').style.zIndex = -1;
-              else document.querySelector('iframe').style.zIndex = 1;
+              let iframeObj = document.querySelector('iframe');
+              if (draggingNow) {
+                if (iframeObj) iframeObj.style.zIndex = -1;
+              } else {
+                if (iframeObj) {
+                  iframeObj.style.zIndex = 1;
+                }
+              }
             }}
           />
           <Section style={sectionStyle}>
